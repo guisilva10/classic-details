@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Estética Automotiva - Eliseu Lopes",
+  title: "Classic Details - Estética Automotiva",
   description: "Serviços de qualidade para melhorar o visual do seu carro.",
 };
 
