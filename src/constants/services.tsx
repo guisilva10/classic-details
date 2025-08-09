@@ -19,7 +19,7 @@ export const services: Service[] = [
     priceRange: "R$ 80 a R$ 100",
     category: "Básico",
     icon: <Droplets className="h-5 w-5" />,
-    image: "/images/lav-1.jpeg",
+    image: "/images/img-1.jpg",
     items: [
       { text: "Lavagem externa", included: true },
       { text: "Limpeza de rodas", included: true },
@@ -42,7 +42,7 @@ export const services: Service[] = [
     priceRange: "R$ 120 a R$ 170",
     category: "Intermediário",
     icon: <Car className="h-5 w-5" />,
-    image: "/images/lav-2.jpeg",
+    image: "/images/img-3.jpg",
     items: [
       {
         text: "Pré-lavagem para amolecer sujeiras e reduzir riscos na pintura",
@@ -169,7 +169,7 @@ export const services: Service[] = [
     priceRange: "R$ 400 a R$ 700",
     category: "Correção",
     icon: <Settings className="h-5 w-5" />,
-    image: "/images/polimento-comercial.jpg",
+    image: "/images/img-2.jpg",
     items: [
       { text: "Melhora o brilho da pintura", included: true },
       { text: "Corrige riscos leves e marcas circulares", included: true },
@@ -194,7 +194,7 @@ export const services: Service[] = [
     priceRange: "R$ 1.500 a R$ 2.500",
     category: "Correção Premium",
     icon: <Zap className="h-5 w-5" />,
-    image: "/images/polimento-tecnico.jpg",
+    image: "/images/img-4.jpg",
     items: [
       {
         text: "1ª Etapa: Corte pesado para remoção de riscos profundos",
@@ -224,7 +224,7 @@ export const services: Service[] = [
     priceRange: "R$ 800 a R$ 1.300",
     category: "Proteção Premium",
     icon: <Shield className="h-5 w-5" />,
-    image: "/images/vitrificacao-pintura.jpg",
+    image: "/images/img-5.jpg",
     items: [
       { text: "Resistência a Raios UV", included: true },
       { text: "Resistência a Chuva ácida", included: true },
