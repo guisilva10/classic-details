@@ -13,29 +13,6 @@ import {
 
 export const services: Service[] = [
   {
-    id: "1",
-    name: "Lavagem Simples",
-    description: "Manutenção rápida e veículos com sujeira leve",
-    priceRange: "R$ 80 a R$ 100",
-    category: "Básico",
-    icon: <Droplets className="h-5 w-5" />,
-    image: "/images/img-1.jpg",
-    items: [
-      { text: "Lavagem externa", included: true },
-      { text: "Limpeza de rodas", included: true },
-      { text: "Remoção de sujeiras leves", included: true },
-      { text: "Secagem com toalha de microfibra", included: true },
-      { text: "Limpeza Interna Básica", included: true },
-      { text: "Aspiração de bancos e carpetes", included: true },
-      {
-        text: "Limpeza superficial de painel, console e portas com pano de microfibra",
-        included: true,
-      },
-    ],
-    whatsappMessage:
-      "Olá! Gostaria de agendar uma *Lavagem Simples* (R$ 80 a R$ 100). Qual a disponibilidade de vocês?",
-  },
-  {
     id: "2",
     name: "Lavagem Detalhada",
     description: "Acabamento melhor e proteção leve da pintura",
