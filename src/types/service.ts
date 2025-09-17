@@ -8,9 +8,9 @@ export interface Service {
   name: string;
   description: string;
   priceRange: string;
-  category: string;
   icon: React.ReactNode;
   image: string;
   items: ServiceItem[];
   whatsappMessage: string;
+  timer?: string;
 }

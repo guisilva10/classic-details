@@ -1,7 +1,6 @@
 import { Service } from "@/types/service";
 import {
   Car,
-  Droplets,
   Shield,
   Sparkles,
   Eye,
@@ -13,11 +12,41 @@ import {
 
 export const services: Service[] = [
   {
+    id: "1",
+    name: "Lavagem Simples",
+    description: "Indicado para: Manutenção rápida de veículos leves",
+    priceRange: "R$ 120 a R$ 170",
+    icon: <Car className="h-5 w-5" />,
+    image: "/images/img-1.jpg",
+    items: [
+      {
+        text: "Lavagem exterba",
+        included: true,
+      },
+      { text: "Limpeza de rodas", included: true },
+      {
+        text: "Remoção de sujeiras leves",
+        included: true,
+      },
+      { text: "Secagem com toalha de microfibra", included: true },
+
+      { text: "Limpeza Interna Básica", included: true },
+      { text: "Aspiração de bancos e carpetes", included: true },
+      {
+        text: "Limpeza superficial de painel, console e portas com pano de microfibra",
+        included: true,
+      },
+    ],
+    timer: "1h30 à 2h",
+    whatsappMessage:
+      "Olá! Tenho interesse na *Lavagem Detalhada* (R$ 120 a R$ 170). Podem me informar a disponibilidade?",
+  },
+  {
     id: "2",
     name: "Lavagem Detalhada",
-    description: "Acabamento melhor e proteção leve da pintura",
+    description:
+      "Indicado para: quem quer um acabamento melhor e proteção leve para pintura",
     priceRange: "R$ 120 a R$ 170",
-    category: "Intermediário",
     icon: <Car className="h-5 w-5" />,
     image: "/images/img-3.jpg",
     items: [
@@ -43,6 +72,7 @@ export const services: Service[] = [
         included: true,
       },
     ],
+    timer: "1h30 à 2h",
     whatsappMessage:
       "Olá! Tenho interesse na *Lavagem Detalhada* (R$ 120 a R$ 170). Podem me informar a disponibilidade?",
   },
@@ -51,7 +81,6 @@ export const services: Service[] = [
     name: "Lavagem Plus",
     description: "Proteção a mais e um toque de brilho especial",
     priceRange: "R$ 250 a R$ 300",
-    category: "Premium",
     icon: <Sparkles className="h-5 w-5" />,
     image: "/images/lav-3.jpeg",
     items: [
@@ -69,6 +98,7 @@ export const services: Service[] = [
       },
       { text: "Limpeza de vidros internos", included: true },
     ],
+    timer: "3h30 à 4h30",
     whatsappMessage:
       "Olá! Gostaria de fazer uma *Lavagem Plus* (R$ 250 a R$ 300). Qual o tempo de execução?",
   },
@@ -77,7 +107,6 @@ export const services: Service[] = [
     name: "Higienização Interna Completa",
     description: "Limpeza profunda de todo o interior do veículo",
     priceRange: "R$ 300 a R$ 800",
-    category: "Especializado",
     icon: <Shield className="h-5 w-5" />,
     image: "/images/lav-4.jpeg",
     items: [
@@ -97,9 +126,8 @@ export const services: Service[] = [
     name: "Higienização de Bancos de Tecido",
     description: "Remove sujeiras impregnadas, manchas e odores",
     priceRange: "R$ 200 a R$ 400",
-    category: "Especializado",
     icon: <Scissors className="h-5 w-5" />,
-    image: "/images/higienizacao-bancos-tecido.jpg",
+    image: "/images/lav-1.jpeg",
     items: [
       {
         text: "Limpeza profunda dos bancos de tecido com uso de produtos específicos",
@@ -120,9 +148,8 @@ export const services: Service[] = [
     name: "Hidratação de Bancos de Couro",
     description: "Revitaliza o couro, previne ressecamento e rachaduras",
     priceRange: "R$ 80 a R$ 120",
-    category: "Especializado",
     icon: <Crown className="h-5 w-5" />,
-    image: "/images/hidratacao-bancos-couro.jpg",
+    image: "/images/img-1.jpg",
     items: [
       { text: "Limpeza profunda dos bancos", included: true },
       {
@@ -144,7 +171,6 @@ export const services: Service[] = [
     description:
       "Remove pequenos riscos superficiais, marcas de lavagens mal feitas e oxidações leves",
     priceRange: "R$ 400 a R$ 700",
-    category: "Correção",
     icon: <Settings className="h-5 w-5" />,
     image: "/images/img-2.jpg",
     items: [
@@ -169,7 +195,6 @@ export const services: Service[] = [
     description:
       "Tratamento completo para quem busca o máximo nível de correção e acabamento",
     priceRange: "R$ 1.500 a R$ 2.500",
-    category: "Correção Premium",
     icon: <Zap className="h-5 w-5" />,
     image: "/images/img-4.jpg",
     items: [
@@ -199,7 +224,6 @@ export const services: Service[] = [
     name: "Vitrificação de Pintura",
     description: "Proteção extrema com brilho incomparável!",
     priceRange: "R$ 800 a R$ 1.300",
-    category: "Proteção Premium",
     icon: <Shield className="h-5 w-5" />,
     image: "/images/img-5.jpg",
     items: [
@@ -227,9 +251,8 @@ export const services: Service[] = [
     description:
       "Aplicação de produto hidrofóbico que cria uma película protetora, fazendo com que a água escorra com mais facilidade",
     priceRange: "R$ 100 a R$ 150",
-    category: "Proteção",
     icon: <Eye className="h-5 w-5" />,
-    image: "/images/vitrificacao-vidros.jpg",
+    image: "/images/img-2.jpg",
     items: [
       {
         text: "Aplicação de produto hidrofóbico que cria uma película protetora",

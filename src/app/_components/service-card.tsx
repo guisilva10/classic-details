@@ -1,6 +1,6 @@
 "use client";
 
-import { Check } from "lucide-react";
+import { Check, Timer } from "lucide-react";
 import { Button } from "./ui/button";
 import {
   Card,
@@ -45,15 +45,7 @@ export function ServiceCard({ service }: { service: Service }) {
       </div>
 
       <CardHeader className="pb-3">
-        <div className="mb-2 flex items-center justify-between">
-          <Badge
-            className={
-              categoryColors[service.category as keyof typeof categoryColors]
-            }
-          >
-            {service.category}
-          </Badge>
-        </div>
+        <div className="mb-2 flex items-center justify-between"></div>
         <CardTitle className="text-lg leading-tight">{service.name}</CardTitle>
         <CardDescription className="text-sm">
           {service.description}
@@ -62,13 +54,18 @@ export function ServiceCard({ service }: { service: Service }) {
 
       <CardContent className="pb-3">
         {/* Service Items */}
-        <div className="mb-4 space-y-2">
+        <div className="mb-4 flex flex-col space-y-2">
           {service.items.map((item, index) => (
             <div key={index} className="flex items-start gap-2">
               <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-green-600" />
               <span className="text-muted-foreground text-sm">{item.text}</span>
             </div>
           ))}
+          {service.timer && (
+            <Badge className="mx-auto mt-5 flex items-center justify-center">
+              Tempo de Duração: {service.timer} <Timer />
+            </Badge>
+          )}
         </div>
 
         {/* Price */}
