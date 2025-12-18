@@ -26,7 +26,7 @@ const categoryColors = {
 
 export function ServiceCard({ service }: { service: Service }) {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "5511999999999"; // Substitua pelo número real da Classic Details
+    const phoneNumber = "5511940326759"; // Substitua pelo número real da Classic Details
     const encodedMessage = encodeURIComponent(service.whatsappMessage);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(whatsappUrl, "_blank");
